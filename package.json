@@ -7,7 +7,7 @@
 		"@itrocks/class-type": "latest",
 		"@itrocks/decorator": "latest"
 	},
-	"description": "A property annotation to specify min–max value ranges, numeric or string-based",
+	"description": "A property annotation to specify min–max value ranges, date, numeric or string-based",
 	"devDependencies": {
 		"typescript": "~5.8"
 	},
@@ -47,5 +47,5 @@
 		"build": "tsc"
 	},
 	"types": "./cjs/range.d.ts",
-	"version": "0.0.1"
+	"version": "0.0.2"
 }

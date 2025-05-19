@@ -5,8 +5,8 @@ const RANGE = Symbol('range')
 
 interface RangeType
 {
-	minValue: number | string,
-	maxValue: number | string
+	minValue: Date | number | string,
+	maxValue: Date | number | string
 }
 
 export function Range<T extends object>(minValue: number | string, maxValue: number | string)

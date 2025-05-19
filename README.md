@@ -6,4 +6,4 @@
 
 # range
 
-A property annotation to specify min–max value ranges, numeric or string-based.
+A property annotation to specify min–max value ranges, date, numeric or string-based.
