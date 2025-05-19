@@ -9,7 +9,7 @@ interface RangeType
 	maxValue: Date | number | string
 }
 
-export function Range<T extends object>(minValue: number | string, maxValue: number | string)
+export function Range<T extends object>(minValue: Date | number | string, maxValue: Date | number | string)
 {
 	return decorate<T>(RANGE, { minValue, maxValue })
 }
