@@ -1,0 +1,51 @@
+{
+	"author": {
+		"name": "Baptiste Pillot",
+		"email": "baptiste@pillot.fr"
+	},
+	"dependencies": {
+		"@itrocks/class-type": "latest",
+		"@itrocks/decorator": "latest"
+	},
+	"description": "A property annotation to specify min–max value ranges, numeric or string-based",
+	"devDependencies": {
+		"typescript": "~5.8"
+	},
+	"engines": {
+		"node": ">=18"
+	},
+	"exports": "./cjs/range.js",
+	"homepage": "https://it.rocks",
+	"files": [
+		"LICENSE",
+		"README.md",
+		"cjs/*",
+		"!*.map"
+	],
+	"keywords": [
+		"backend",
+		"decorator",
+		"it.rocks",
+		"max",
+		"maximal",
+		"maximum",
+		"min",
+		"minimal",
+		"minimum",
+		"property",
+		"range",
+		"validate",
+		"validation"
+	],
+	"license": "ISC",
+	"name": "@itrocks/range",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/itrocks-ts/range.git"
+	},
+	"scripts": {
+		"build": "tsc"
+	},
+	"types": "./cjs/range.d.ts",
+	"version": "0.0.1"
+}
