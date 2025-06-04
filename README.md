@@ -6,4 +6,4 @@
 
 # range
 
-A property decorator to specify min–max value ranges, date, numeric or string-based.
+A property decorator to specify min-max value ranges, date, numeric or string-based.
