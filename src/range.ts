@@ -3,15 +3,17 @@ import { decorate, decoratorOf } from '@itrocks/decorator/property'
 
 const RANGE = Symbol('range')
 
+type Ranged = bigint | number | string | Date
+
 interface RangeType
 {
-	minValue: Date | number | string,
-	maxValue: Date | number | string
+	minValue: Ranged,
+	maxValue: Ranged
 }
 
-export function Range<T extends object>(minValue: Date | number | string, maxValue: Date | number | string)
+export function Range<T extends object>(minValue?: Ranged, maxValue?: Ranged)
 {
-	return decorate<T>(RANGE, { minValue, maxValue })
+	return decorate<T>(RANGE, ((minValue === undefined) && (maxValue === undefined)) ? undefined : { minValue, maxValue })
 }
 
 export function rangeOf<T extends object>(target: ObjectOrType<T>, property: KeyOf<T>)
